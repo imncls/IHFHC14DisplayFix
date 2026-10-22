@@ -1,0 +1,24 @@
+[project]
+name = "hc14-display-fix"
+version = "1.0.0"
+description = "Sets IHF Handball Challenge 14 to fullscreen at the main monitor's resolution (unofficial)"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "pyinstaller"]
+
+[tool.setuptools]
+packages = ["displayfix"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
