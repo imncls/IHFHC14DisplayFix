@@ -1,4 +1,4 @@
-# HC14 Display Fix
+# IHFHC14 Display Fix
 
 A small Windows tool that makes **IHF Handball Challenge 14** start in fullscreen at your screen's resolution. Use it if the game opens:
 - in a small window with black bars,
